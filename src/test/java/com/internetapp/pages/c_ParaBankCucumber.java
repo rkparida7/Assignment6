@@ -44,28 +44,28 @@ public class c_ParaBankCucumber extends WebActions {
 		driver.navigate().to("https://parabank.parasoft.com/parabank/register.htm");
 	}
 	
-	@And("create New IDs {string} and {string}")
-	public void create_New_IDs(String string1, String string2) throws InterruptedException {
-		scrollDown();
-		sendkeym(Locators.Fname(), "Rutukanta");
-		sendkeym(Locators.Lname(), "Parida");
-		sendkeym(Locators.address(), "Chennai");
-		sendkeym(Locators.city(), "Chennai");
-		sendkeym(Locators.state(), "Tamil Nadu");
-		sendkeym(Locators.zipCode(), "600032");
-		sendkeym(Locators.phone(), "9874561230");
-		sendkeym(Locators.SSN(), "789546");
-		sendkeym(Locators.UName(), string1);
-		sendkeym(Locators.Pswd(), string2);
-		sendkeym(Locators.confirmPswd(), string2);
-		logScreenshot("Data Entered successfully");
-		clickm(Locators.registerButton());
-		System.out.println("---> Signup Successfully");
-		logScreenshot("Signup in successfully");
-		clickm(Locators.logoutButton());
-	}
+// 	@And("create New IDs {string} and {string}")
+// 	public void create_New_IDs(String string1, String string2) throws InterruptedException {
+// 		scrollDown();
+// 		sendkeym(Locators.Fname(), "Rutukanta");
+// 		sendkeym(Locators.Lname(), "Parida");
+// 		sendkeym(Locators.address(), "Chennai");
+// 		sendkeym(Locators.city(), "Chennai");
+// 		sendkeym(Locators.state(), "Tamil Nadu");
+// 		sendkeym(Locators.zipCode(), "600032");
+// 		sendkeym(Locators.phone(), "9874561230");
+// 		sendkeym(Locators.SSN(), "789546");
+// 		sendkeym(Locators.UName(), string1);
+// 		sendkeym(Locators.Pswd(), string2);
+// 		sendkeym(Locators.confirmPswd(), string2);
+// 		logScreenshot("Data Entered successfully");
+// 		clickm(Locators.registerButton());
+// 		System.out.println("---> Signup Successfully");
+// 		logScreenshot("Signup in successfully");
+// 		clickm(Locators.logoutButton());
+// 	}
 
-	@Then("Enter the User Name and password and click login button {string} and {string}")
+	@When("Enter the User Name and password and click login button {string} and {string}")
 	public void enter_the_User_Name_and_password_and_click_login_button_and(String string1, String string2)
 			throws InterruptedException {
 		
