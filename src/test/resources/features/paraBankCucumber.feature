@@ -5,8 +5,8 @@ Feature: ParaBank Task
   @tag1
   Scenario Outline: To do a fund transfer in ParaBank Site
     Given Launch the paraBank Site
-    And create New IDs "<username>" and "<password>"
-    Then Enter the User Name and password and click login button "<username>" and "<password>"
+   # And create New IDs "<username>" and "<password>"
+    When Enter the User Name and password and click login button "<username>" and "<password>"
     And Navigate to Open New Account section
     When Select the Account Type "<accounttype>" and Click Open new accountButton
     Then A New account is Created successfully
