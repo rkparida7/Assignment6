@@ -4,7 +4,7 @@
     <test name="TestNG Test1">
         <classes>
            <!--   <class name="com.internetapp.tests.CucumberRunner"/>  -->
-           <class name="com.Rutukanta.parabank.paraBankRunner" />
+          <class name="com.ParabankCucumberRunner" />
         </classes>
     </test> <!-- TestNG Test0 -->
 </suite> <!-- TestNG Suite -->
