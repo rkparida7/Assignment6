@@ -75,13 +75,13 @@ public class c_ParaBankCucumber extends WebActions {
 			logScreenshot("logeed in");
 			clickm(Locators.loginButton());
 			
-			String value = driver.findElement(By.xpath("//p[@class='error']")).getText();
-			System.out.println("--> Error found : "+value);
-			if (value != "The username and password could not be verified.") {
-				System.out.println("---> Unable to Login Parabank");
-			}else {
-				System.out.println("---> Able to Login Successfully");
-			}
+// 			String value = driver.findElement(By.xpath("//p[@class='error']")).getText();
+// 			System.out.println("--> Error found : "+value);
+// 			if (value != "The username and password could not be verified.") {
+// 				System.out.println("---> Unable to Login Parabank");
+// 			}else {
+// 				System.out.println("---> Able to Login Successfully");
+// 			}
 	}
 
 	@And("Navigate to Open New Account section")
