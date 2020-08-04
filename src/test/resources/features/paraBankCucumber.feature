@@ -26,7 +26,7 @@ Feature: ParaBank Task
    
 Examples:
 | username  | password    | accounttype| amount | 		date   | 
-| 	MavUser1 	| PASSWORD1   | SAVINGS    | 100	|	08-01-2020 |
+| 	MavUser1 	| PASSWORD1   | SAVINGS    | 100	|	08-04-2020 |
 #| 	MavUser2 	| PASSWORD1   | SAVINGS    | 100	|	08-01-2020 |
 
 
